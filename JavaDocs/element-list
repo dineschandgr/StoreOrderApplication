@@ -1,0 +1,7 @@
+com.storeorderapplication
+com.storeorderapplication.controller
+com.storeorderapplication.exception
+com.storeorderapplication.model
+com.storeorderapplication.repository
+com.storeorderapplication.service
+com.storeorderapplication.util
