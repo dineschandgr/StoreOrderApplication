@@ -37,22 +37,24 @@
 
 Navigate to the folder \StoreOrderApplication in cmd prompt or shell
 
-#Run all the tests, download the dependencies and generate the jar file 2. execute the command
+1. Run all the tests, download the dependencies and generate the jar file 
 
-mvn clean install
+2. execute the command
 
-#Run the jar file inside the embedded server 3. execute this command to start the server in default port 8080
+  mvn clean install
 
-mvn spring-boot:run
+3. Run the jar file inside the embedded server 3. execute this command to start the server in default port 8080
 
-#Test file upload from postman
+  mvn spring-boot:run
 
-Submit a post request to the url http://localhost:8080/api/uploadStoreOrder with the key as 'file' and then choose the csv file.
+4. Test file upload from postman
 
-Verify the response messages in the postman
+  Submit a post request to the url http://localhost:8080/api/uploadStoreOrder with the key as 'file' and then choose the csv file.
+
+  Verify the response messages in the postman
 
 # Javadocs
 
-Navigate to the folder \StoreOrderApplication\Javadocs
+1. Navigate to the folder \StoreOrderApplication\Javadocs
 
-open the index.html to naviage across and read the javadocs for all the classes and its method
+2. Open the index.html to naviage across and read the javadocs for all the classes and its method
