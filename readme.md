@@ -1,4 +1,4 @@
-#Decisions 
+# Decisions 
 
 1. Initially i wanted to hardcode the system path of the CSV and process it but i have assumed that my solution would be used for uploading files dynamically by differenct clients. Hence i have designed it as an API to be used by the clients. 
 
@@ -23,7 +23,7 @@
 11. Hibernate ORM tool is used for persistence. In future, we can easily switch to any database provider with minimal configuration
 
 
-#Assumptions
+# Assumptions
 
 1. I am assuming that the file size is not more than 100 MB. If the file size is more, client needs to split the file into multiple file or we need to do batch processing asynchronously using Spring Batch. This ensures better throughput with low latency.
 
@@ -32,3 +32,29 @@
 3. I have assumed that my end points are secured using OAuth2 / Open ID Connect frameworks.
 
 4. I have assumed that my Database credentials are encrypted and stored in a vault and the applications are not affected when the password is rotated
+
+# Instructions to build the code and execute it
+
+Navigate to the folder \StoreOrderApplication in cmd prompt or shell
+
+1. Run all the tests, download the dependencies and generate the jar file 
+
+2. execute the command
+
+  mvn clean install
+
+3. Run the jar file inside the embedded server 3. execute this command to start the server in default port 8080
+
+  mvn spring-boot:run
+
+4. Test file upload from postman
+
+  Submit a post request to the url http://localhost:8080/api/uploadStoreOrder with the key as 'file' and then choose the csv file.
+
+  Verify the response messages in the postman
+
+# Javadocs
+
+1. Navigate to the folder \StoreOrderApplication\Javadocs
+
+2. Open the index.html to naviage across and read the javadocs for all the classes and its method
